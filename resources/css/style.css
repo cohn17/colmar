@@ -1,0 +1,312 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+}
+
+/*navigation bar*/
+
+header {
+  display: flex;
+  width: 100%;
+  height: 4rem;
+  position: fixed;
+  top: 0;
+  background-color: white;
+  z-index: 1;
+}
+
+.mobile {
+  display: flex;
+  width: 100%;
+}
+
+.desktop {
+  display: flex;
+  width: 100%;
+}
+
+header ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: inherit;
+  margin: 0 1.5rem;
+}
+
+header li {
+  display: inline;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+header img {
+  width: 125%;
+  height: 125%;
+}
+
+header .desktop img {
+  height: 4rem;
+  width: auto;
+  margin-left: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+header .desktop {
+  display: none;
+}
+
+header .desktop .logo {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  color: gray;
+}
+
+header .desktop ul {
+  justify-content: flex-end;
+}
+
+header .desktop li {
+  font-size: 1.25rem;
+  padding-left: 1rem;
+  white-space: nowrap;
+}
+
+header #colmar {
+  color: black;
+  font-weight: bold;
+}
+
+/*header: desktop version*/
+
+@media only screen and (min-width: 451px) {
+  header .mobile {
+    display: none;
+  }
+
+  header .desktop {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+/*banner section*/
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #d4d4d4;
+  margin-top: 4rem;
+}
+
+h1,
+h2 {
+  color: #444;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 2.5rem;
+  line-height: 1.4;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 1.4;
+  margin-bottom: 1.5rem;
+}
+
+p {
+  margin-top: -0.5rem;
+  margin-bottom: 1rem;
+  line-height: 1.75;
+}
+
+.banner img {
+  width: 100%;
+}
+
+.banner .button {
+  color: white;
+  text-align: center;
+  font-size: 1rem;
+  padding: 1rem;
+  background-color: #444;
+  width: 90%;
+  margin: 2rem auto;
+  max-width: 20rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.banner .container .text-container {
+  padding: 2rem 1.5rem;
+}
+
+/*banner: desktop version*/
+
+@media only screen and (min-width: 451px) {
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 1.5rem;
+  }
+
+  .banner .container .image-container {
+    width: 60%;
+  }
+
+  .banner .container .text-container {
+    width: 40%;
+    margin: 2rem;
+    padding-right: 5rem;
+    z-index: 5;
+  }
+
+  h1 {
+    font-weight: 800;
+  }
+
+  h2 {
+    font-weight: 700;
+  }
+}
+
+.information {
+  display: flex;
+  width: 100%;
+}
+
+/*information: full screen in mobile version*/
+
+.practice {
+  display: none;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+
+.sidebar-item {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.sidebar .text-container {
+  padding: 1rem 1rem 4rem 1rem;
+}
+
+.sidebar img {
+  width: 100%;
+}
+
+.sidebar a {
+  color: blue;
+  text-decoration: none;
+}
+
+.sidebar .image-container img:last-child {
+  display: none;
+}
+
+/*information: desktop version*/
+
+@media only screen and (min-width: 451px) {
+
+  p {
+    font-size: 1.25rem;
+  }
+
+  .practice {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding:2rem 1.5rem;
+  }
+
+  .practice h1 {
+    padding-top: 2rem;
+  }
+
+  .practice .image-container {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  .sidebar {
+    width: 40%;
+  }
+
+  .sidebar-item {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .sidebar .text-container {
+    width: 65%;
+    padding: 0 1rem;
+  }
+
+  .sidebar .image-container img {
+    width: 100%;
+  }
+
+  .sidebar .image-container img:first-child {
+    display: none;
+  }
+
+  .sidebar .image-container img:last-child {
+    display: flex;
+  }
+
+  #guest {
+    background-color: #d4d4d4;
+  }
+}
+
+/*courses section*/
+
+.learning {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 3.5rem;
+  width: 100%;
+  background-color: #d4d4d4;
+}
+
+.majors {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.course {
+  margin: 1rem;
+}
+
+.course .text-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 1rem;
+  background-color: white;
+}
