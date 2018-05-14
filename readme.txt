@@ -7,3 +7,5 @@ This project offered many difficulties.
 3) I was unable to line up the bottom of the information section photo with the bottom of the second sidebar photo if I wanted to keep to the specs.
 
 Thank you.
+
+Addendum: I completed the project before moving on to days 2-7, since the instructions don't say to incorporate those lessons into the project. You should perhaps put the project last, or correct the instructions.
